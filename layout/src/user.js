@@ -1,0 +1,5 @@
+import React from 'react';
+
+const data = {"results":[{"gender":"male","name":{"title":"Mr","first":"Joe","last":"Turner"},"location":{"street":{"number":4287,"name":"Church Road"},"city":"Cashel","state":"Clare","country":"Ireland","postcode":95822,"coordinates":{"latitude":"20.4152","longitude":"-46.3191"},"timezone":{"offset":"-9:00","description":"Alaska"}},"email":"joe.turner@example.com","login":{"uuid":"8e16131f-8f7c-4b26-a515-8aaffdc44a5f","username":"bigfrog594","password":"eight","salt":"F0BWQjzk","md5":"f5c87dd8eef69be9ba13b0fe9e8425cb","sha1":"96ef66605fde45842ba714a57be0e1888d575471","sha256":"16681018acf210cf0477ef4dd284cdae9dbf897838267ae3904222272bebc592"},"dob":{"date":"1981-02-04T09:24:45.863Z","age":39},"registered":{"date":"2013-11-22T03:14:06.600Z","age":7},"phone":"071-872-2639","cell":"081-361-7643","id":{"name":"PPS","value":"8568985T"},"picture":{"large":"https://randomuser.me/api/portraits/men/99.jpg","medium":"https://randomuser.me/api/portraits/med/men/99.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/99.jpg"},"nat":"IE"}],"info":{"seed":"1075a3aa4850902a","results":1,"page":1,"version":"1.3"}};
+
+export default data;
