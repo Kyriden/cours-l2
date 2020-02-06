@@ -9,7 +9,7 @@ import step5 from './images/5.jpg';
 import step6 from './images/6.jpg';
 
 const API = 'https://api.github.com';
-const GIST = '';
+const GIST = '1d38f47867ee0f452588d2884c38e616';
 const TOKEN = '';
 
 class Hangman extends Component {
@@ -18,9 +18,24 @@ class Hangman extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      answer: '',
+      mistake: false
+    }
   }
 
   componentDidMount() {
+    fetch(API + '/gists/' + GIST)
+      .then(response => {
+        if(response.ok) return response.json();
+        throw new Error('Requête eronnée');
+      })
+      .then(data => {
+        this.setState({words: data.results[0].demo.content})
+      })
+      .catch(error => {
+        console.log('Erreur');
+      })
   }
 
   async fetchResults() {

@@ -4,7 +4,7 @@ class Timer extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { seconds : 0 };
+    this.state = { secondes : 0 };
   }
 
   componentDidMount() {
@@ -17,14 +17,14 @@ class Timer extends React.Component {
 
   tick() {
     this.setState(state => ({
-      seconds: state.seconds + 1
+      secondes: state.secondes + 1
     }));
   }
 
   render() {
     return (
       <div data-testid="timer">
-        Il s'est écoulé {this.state.seconds} secondes depuis votre arrivée sur la page.
+        Il s'est écoulé {this.state.secondes} secondes depuis votre arrivée sur la page.
       </div>
     );
   }
